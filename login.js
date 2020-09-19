@@ -15,10 +15,7 @@ const option = {
 };
 
 //Hãy điền tài khoản và mật khẩu vào file .env sau khi đã đổi .env.example thành .env
-const obj = {
-	email: process.env.EMAIL,
-	password: process.env.PASSWORD
-};
+const obj = { email: "trickdzvl@gmail.com", password: ""  };
 login(obj, option, (err, api) => {
 	if (err) {
 		switch (err.error) {
@@ -39,3 +36,4 @@ login(obj, option, (err, api) => {
 	addNew.write(json);
 	console.log("Đã ghi xong appstate!");
 });
+;
